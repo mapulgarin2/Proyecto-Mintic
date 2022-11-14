@@ -9,6 +9,11 @@ export default class login extends React.Component {
       pass: '',
     };
   }
+
+  iniciarSesion(){
+    alert('Boton de inicio de sesion')
+  }
+  
   render() {
     return (
       <Container id="login-container" style={{ marginTop: 200 }}>
@@ -35,6 +40,9 @@ export default class login extends React.Component {
                   <Button
                     variant="primary"
                     style={{ marginTop: 20, width: '100%' }}
+                    onClick= {() =>{
+                      this.iniciarSesion();
+                    }}
                   >
                     Iniciar Sesion
                   </Button>
